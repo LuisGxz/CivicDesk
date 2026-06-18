@@ -505,3 +505,7 @@ frontend/.angular/
 frontend/dist/
 node_modules/
 *.local
+
+# Playwright
+frontend/test-results/
+frontend/playwright-report/

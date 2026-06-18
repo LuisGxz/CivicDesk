@@ -74,6 +74,7 @@ internal static class LoadDetail
             .Include(a => a.ServiceType).ThenInclude(s => s!.RequiredDocuments)
             .Include(a => a.Citizen)
             .Include(a => a.AssignedOfficer)
+            .Include(a => a.FieldValues)
             .Include(a => a.Documents)
             .Include(a => a.Events)
             .Include(a => a.Comments).ThenInclude(c => c.Author);

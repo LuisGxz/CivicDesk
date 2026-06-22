@@ -39,6 +39,11 @@ interface DemoAccount { email: string; pass: string; role: 'Citizen' | 'Officer'
           </button>
         </form>
 
+        <p style="margin-top:1.1rem;text-align:center;font-size:11px;line-height:1.5;opacity:.6;">
+          ⏳ Free-tier demo — the backend may take ~30s to wake up on the first request.<br>
+          Demo gratuita — el backend puede tardar ~30s en despertar en la primera petición.
+        </p>
+
         <p class="text-sm text-ink-700 mt-5">
           {{ lang.t().auth.noAccount }}
           <a routerLink="/register" class="font-bold text-civic-700 hover:underline">{{ lang.t().auth.createAccount }}</a>
